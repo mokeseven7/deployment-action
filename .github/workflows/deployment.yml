@@ -67,8 +67,7 @@ jobs:
       - name: deploy the pull request
         run: |
           # deployment logic goes here
-          echo "::debug::This is where i would be deploying eventually..."
-          echo "::debug::Making a fake curl request to envoyer..""
+          echo "Hello World"
           sleep 10
           echo "::set-output name=envoyer_deployment_id::1684794"
       
