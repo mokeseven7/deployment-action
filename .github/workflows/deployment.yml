@@ -67,10 +67,11 @@ jobs:
       - name: deploy the pull request
         run: |
           # deployment logic goes here
-          echo "::set-output::This is where i will deploy eventually::green"
-          echo "::set-output::Just Going To Sleep For Now Though::green"
+          echo "::debug::This is where i would be deploying eventually..."
+          echo "::debug::Making a fake curl request to envoyer..""
           sleep 10
-          echo "::set-output::Just Going To Sleep For Now Though::green"
+          echo "::set-output name=envoyer_deployment_id::1684794"
+      
       - name: set deployment status to success
         id: successful_deployment
         uses: octokit/request-action@v2.x
