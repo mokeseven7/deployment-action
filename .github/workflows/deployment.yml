@@ -69,7 +69,8 @@ jobs:
           # deployment logic goes here
           echo "Hello World"
           sleep 10
-          echo "::set-output::Just Going To Sleep For Now Though::green"
+          echo "::set-output name=envoyer_deployment_id::1684794"
+      
       - name: set deployment status to success
         id: successful_deployment
         uses: octokit/request-action@v2.x
